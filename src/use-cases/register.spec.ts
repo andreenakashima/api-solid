@@ -41,7 +41,7 @@ describe("Register Use Case", () => {
   it("should not be able to register with same email twice", async () => {
     const email = "johndoe@example.com";
 
-    await sut.execute({
+    sut.execute({
       name: "John Doe",
       email,
       password: "123123",
